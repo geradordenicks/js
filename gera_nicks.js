@@ -1,0 +1,547 @@
+$(document).ready(function(){
+
+        $(".copy-iten").click(function () {
+            var id = $(this).attr("data-id");
+
+
+            var copyText = document.getElementById(id);
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(copyText.value);
+
+            alert('Nick Copiado!');
+
+        });
+});
+
+function gerarnick(input) {
+base = input;
+nick_style_1 = document.getElementById('nick_style_1');
+nick_style_2 = document.getElementById('nick_style_2');
+nick_style_3 = document.getElementById('nick_style_3');
+nick_style_4 = document.getElementById('nick_style_4');
+nick_style_5 = document.getElementById('nick_style_5');
+nick_style_6 = document.getElementById('nick_style_6');
+nick_style_7 = document.getElementById('nick_style_7');
+nick_style_8 = document.getElementById('nick_style_8');
+nick_style_9 = document.getElementById('nick_style_9');
+nick_style_10 = document.getElementById('nick_style_10');
+nick_style_11 = document.getElementById('nick_style_11');
+nick_style_12 = document.getElementById('nick_style_12');
+nick_style_13 = document.getElementById('nick_style_13');
+nick_style_14 = document.getElementById('nick_style_14');
+nick_style_15 = document.getElementById('nick_style_15');
+nick_style_16 = document.getElementById('nick_style_16');
+nick_style_17 = document.getElementById('nick_style_17');
+nick_style_18 = document.getElementById('nick_style_18');
+nick_style_19 = document.getElementById('nick_style_19');
+nick_style_20 = document.getElementById('nick_style_20');
+nick_style_21 = document.getElementById('nick_style_21');
+nick_style_23 = document.getElementById('nick_style_23');
+nick_style_24 = document.getElementById('nick_style_24');
+nick_style_25 = document.getElementById('nick_style_25');
+nick_style_26 = document.getElementById('nick_style_26');
+nick_style_27 = document.getElementById('nick_style_27');
+
+nick_style_1.value = base.value
+.replace(/a/gi, "ล")
+.replace(/b/gi, "в")
+.replace(/c/gi, "¢")
+.replace(/d/gi, "∂")
+.replace(/e/gi, "э")
+.replace(/f/gi, "ƒ")
+.replace(/g/gi, "φ")
+.replace(/h/gi, "ђ")
+.replace(/i/gi, "เ")
+.replace(/j/gi, "נ")
+.replace(/k/gi, "к")
+.replace(/l/gi, "ℓ")
+.replace(/m/gi, "м")
+.replace(/n/gi, "и")
+.replace(/o/gi, "๏")
+.replace(/p/gi, "ק")
+.replace(/q/gi, "ợ")
+.replace(/r/gi, "я")
+.replace(/s/gi, "ร")
+.replace(/t/gi, "†")
+.replace(/u/gi, "µ")
+.replace(/v/gi, "√")
+.replace(/x/gi, "җ")
+.replace(/ /gi, "ㅤ")
+.replace(/w/gi, "ω")
+.replace(/y/gi, "ý")
+.replace(/z/gi, "ž")
+;
+nick_style_2.value = base.value
+.replace(/a/gi, "α")
+.replace(/e/gi, "є")
+.replace(/h/gi, "н")
+.replace(/m/gi, "м")
+.replace(/n/gi, "и")
+.replace(/o/gi, "σ")
+.replace(/p/gi, "ρ")
+.replace(/r/gi, "я")
+.replace(/s/gi, "ร")
+.replace(/ /gi, "ㅤ")
+.replace(/t/gi, "т")
+.replace(/u/gi, "υ")
+;
+nick_style_3.value = base.value
+.replace(/a/gi, "α")
+.replace(/e/gi, "є")
+.replace(/h/gi, "Ћ")
+.replace(/l/gi, "ł")
+.replace(/m/gi, "м")
+.replace(/n/gi, "η")
+.replace(/ /gi, "ㅤ")
+.replace(/o/gi, "ø")
+.replace(/p/gi, "ρ")
+.replace(/s/gi, "s")
+.replace(/t/gi, "ŧ")
+;
+nova_palavra = "";
+for(i = 0; i < base.value.length; i++) {
+texto = base.value.substr(i, 1);
+if(i % 2 === 0) {
+nova_palavra+= texto.toUpperCase();
+} else {
+nova_palavra+= texto.toLowerCase();
+}
+}
+nick_style_4.value = nova_palavra
+.replace(/ /gi, "ㅤ")
+;
+
+nick_style_5.value = base.value
+.replace(/a/gi, "ɑ")
+.replace(/b/gi, "ɓ")
+.replace(/d/gi, "ɗ")
+.replace(/e/gi, "ɛ")
+.replace(/f/gi, "Բ")
+.replace(/h/gi, "ɦ")
+.replace(/j/gi, "ʝ")
+.replace(/l/gi, "ʆ")
+.replace(/m/gi, "ɱ")
+.replace(/n/gi, "ɳ")
+.replace(/o/gi, "ѳ")
+.replace(/r/gi, "ʀ")
+.replace(/s/gi, "ร")
+.replace(/v/gi, "ѵ")
+.replace(/ /gi, "ㅤ")
+;
+nick_style_6.value = base.value
+.replace(/a/gi, "آ")
+.replace(/b/gi, "أ")
+.replace(/c/gi, "ؤ")
+.replace(/d/gi, "إ")
+.replace(/e/gi, "ئ")
+.replace(/f/gi, "ئ")
+.replace(/g/gi, "ا")
+.replace(/h/gi, "ب")
+.replace(/i/gi, "ة")
+.replace(/j/gi, "ت")
+.replace(/k/gi, "ث")
+.replace(/l/gi, "ج")
+.replace(/m/gi, "خ")
+.replace(/n/gi, "د")
+.replace(/o/gi, "ذ")
+.replace(/p/gi, "ر")
+.replace(/q/gi, "ز")
+.replace(/r/gi, "س")
+.replace(/s/gi, "آ")
+.replace(/t/gi, "ص")
+.replace(/u/gi, "ض")
+.replace(/v/gi, "ط")
+.replace(/x/gi, "ع")
+.replace(/w/gi, "ظ")
+.replace(/y/gi, "غ")
+.replace(/z/gi, "ב")
+.replace(/ /gi, "ㅤ")
+;
+nick_style_7.value = base.value
+.replace(/a/gi, "α")
+.replace(/b/gi, "в")
+.replace(/c/gi, "૮")
+.replace(/d/gi, "đ")
+.replace(/e/gi, "૯")
+.replace(/f/gi, "Բ")
+.replace(/h/gi, "ђ")
+.replace(/k/gi, "ઝ")
+.replace(/l/gi, "ℓ")
+.replace(/m/gi, "ʍ")
+.replace(/n/gi, "ท")
+.replace(/o/gi, "ѳ")
+.replace(/p/gi, "ρ")
+.replace(/q/gi, "૧")
+.replace(/r/gi, "૨")
+.replace(/s/gi, "ઽ")
+.replace(/t/gi, "Ƭ")
+.replace(/u/gi, "ષ")
+.replace(/v/gi, "√")
+.replace(/x/gi, "×")
+.replace(/w/gi, "ખ")
+.replace(/ /gi, "ㅤ")
+;
+nick_style_8.value = base.value
+.replace(/ /gi, "ㅤ")
+.replace(/a/gi, "α")
+;
+nick_style_9.value = "[" + base.value.replace(/|/g, "̲̅")
+.replace(/a/gi,"α")
+.replace(/p/gi,"ρ")
+.replace(/n/gi,"и")
+.replace(/t/gi,"т")
+.replace(/e/gi,"є")
+.replace(/u/gi,"υ")
+.replace(/h/gi,"н")
+.replace(/s/gi,"ร")
+.replace(/o/gi,"σ")
+.replace(/m/gi,"м")
+.replace(/ /gi, "ㅤ")
+.replace(/r/gi,"я") + "]"
+;
+
+nick_style_10.value = base.value
+.replace(/a/gi, "Α")
+.replace(/e/gi, "э")
+.replace(/h/gi, "н")
+.replace(/m/gi, "м")
+.replace(/n/gi, "И")
+.replace(/o/gi, "Ø")
+.replace(/p/gi, "p")
+.replace(/r/gi, "Я")
+.replace(/t/gi, "Ŧ")
+.replace(/u/gi, "u")
+.replace(/ /gi, "ㅤ")
+;
+nick_style_11.value = base.value
+.replace(/a/gi, "ค")
+.replace(/b/gi, "๒")
+.replace(/d/gi, "๔")
+.replace(/e/gi, "є")
+.replace(/f/gi, "Ŧ")
+.replace(/h/gi, "ђ")
+.replace(/i/gi, "เ")
+.replace(/j/gi, "ן")
+.replace(/k/gi, "к")
+.replace(/l/gi, "l")
+.replace(/m/gi, "м")
+.replace(/n/gi, "ภ")
+.replace(/o/gi, "๏")
+.replace(/r/gi, "ภ")
+.replace(/s/gi, "ร")
+.replace(/t/gi, "т")
+.replace(/u/gi, "ย")
+.replace(/ /gi, "ㅤ")
+;
+nick_style_12.value = base.value
+.replace(/a/gi, "Ǻ")
+.replace(/e/gi, "€")
+.replace(/h/gi, "Ћ")
+.replace(/m/gi, "м")
+.replace(/n/gi, "п")
+.replace(/o/gi, "Ø")
+.replace(/p/gi, "ρ")
+.replace(/r/gi, "Я")
+.replace(/s/gi, "ک")
+.replace(/t/gi, "T")
+.replace(/u/gi, "Ü")
+.replace(/ /gi, "ㅤ")
+;
+nick_style_13.value = base.value
+.replace(/a/gi, "ɐ")
+.replace(/d/gi, "p")
+.replace(/e/gi, "ǝ")
+.replace(/h/gi, "ɥ")
+.replace(/m/gi, "ɯ")
+.replace(/n/gi, "u")
+.replace(/o/gi, "o")
+.replace(/p/gi, "d")
+.replace(/r/gi, "ɹ")
+.replace(/s/gi, "s")
+.replace(/t/gi, "ʇ")
+.replace(/u/gi, "n")
+.replace(/w/gi, "m")
+.replace(/ /gi, "ㅤ")
+;
+nick_style_14.value = "‮" + base.value;
+
+nick_style_15.value = base.value
+.replace(/a/gi, "Δ")
+.replace(/b/gi, "β")
+.replace(/c/gi, "Ć")
+.replace(/d/gi, "Đ")
+.replace(/e/gi, "€")
+.replace(/f/gi, "₣")
+.replace(/g/gi, "Ǥ")
+.replace(/h/gi, "Ħ")
+.replace(/i/gi, "Ξ")
+.replace(/j/gi, "Ĵ")
+.replace(/k/gi, "Ҝ")
+.replace(/l/gi, "Ł")
+.replace(/m/gi, "Μ")
+.replace(/n/gi, "Ň")
+.replace(/o/gi, "Ø")
+.replace(/p/gi, "Р")
+.replace(/q/gi, "Ω")
+.replace(/r/gi, "Ř")
+.replace(/s/gi, "Ş")
+.replace(/t/gi, "Ŧ")
+.replace(/u/gi, "Ữ")
+.replace(/v/gi, "V")
+.replace(/x/gi, "Ж")
+.replace(/w/gi, "Ŵ")
+.replace(/y/gi, "¥")
+.replace(/z/gi, "Ž")
+.replace(/ /gi, "ㅤ")
+;
+nick_style_16.value = base.value
+.replace(/a/gi, "4")
+.replace(/e/gi, "3")
+.replace(/i/gi, "1")
+.replace(/o/gi, "0")
+.replace(/s/gi, "5")
+.replace(/t/gi, "7")
+.replace(/ /gi, "ㅤ")
+;
+nick_style_17.value = base.value
+.replace(/a/gi, "ⓐ")
+.replace(/b/gi, "ⓑ")
+.replace(/c/gi, "ⓒ")
+.replace(/d/gi, "ⓓ")
+.replace(/e/gi, "ⓔ")
+.replace(/f/gi, "ⓕ")
+.replace(/g/gi, "ⓖ")
+.replace(/h/gi, "ⓗ")
+.replace(/i/gi, "ⓘ")
+.replace(/j/gi, "ⓙ")
+.replace(/k/gi, "ⓚ")
+.replace(/l/gi, "ⓛ")
+.replace(/m/gi, "ⓜ")
+.replace(/n/gi, "ⓝ")
+.replace(/o/gi, "ⓞ")
+.replace(/p/gi, "ⓟ")
+.replace(/q/gi, "ⓠ")
+.replace(/r/gi, "ⓡ")
+.replace(/s/gi, "ⓢ")
+.replace(/t/gi, "ⓣ")
+.replace(/u/gi, "ⓤ")
+.replace(/v/gi, "ⓥ")
+.replace(/x/gi, "ⓧ")
+.replace(/w/gi, "ⓦ")
+.replace(/y/gi, "ⓨ")
+.replace(/z/gi, "ⓩ")
+.replace(/ /gi, "ㅤ")
+;
+nick_style_18.value = base.value
+.replace(/a/gi, "á")
+.replace(/e/gi, "è")
+.replace(/h/gi, "H")
+.replace(/i/gi, "í")
+.replace(/o/gi, "Ô")
+.replace(/s/gi, "S")
+.replace(/u/gi, "Ù")
+.replace(/ /gi, "ㅤ")
+;
+nick_style_19.value = base.value
+.replace(/a/gi, "Ǻ")
+.replace(/b/gi, "в")
+.replace(/d/gi, "Ð")
+.replace(/e/gi, "€")
+.replace(/f/gi, "ƒ")
+.replace(/g/gi, "ǥ")
+.replace(/h/gi, "Ћ")
+.replace(/l/gi, "Ł")
+.replace(/m/gi, "м")
+.replace(/n/gi, "и")
+.replace(/o/gi, "Ø")
+.replace(/p/gi, "ρ")
+.replace(/r/gi, "я")
+.replace(/s/gi, "ร")
+.replace(/t/gi, "т")
+.replace(/u/gi, "Ü")
+.replace(/x/gi, "×")
+.replace(/w/gi, "ω")
+.replace(/y/gi, "¥")
+.replace(/z/gi, "ƶ")
+.replace(/ /gi, "ㅤ")
+;
+nick_style_20.value=" " + base.value.replace(/|/g,"̶") + " ";
+nick_style_21.value = base.value
+.replace(/a/gi, "ᵃ")
+.replace(/b/gi, "ᵇ")
+.replace(/c/gi, "ᶜ")
+.replace(/d/gi, "ᵈ")
+.replace(/e/gi, "ᵉ")
+.replace(/f/gi, "ᶠ")
+.replace(/g/gi, "ᵍ")
+.replace(/h/gi, "ʰ")
+.replace(/i/gi, "ᶤ")
+.replace(/j/gi, "ʲ")
+.replace(/k/gi, "ᵏ")
+.replace(/l/gi, "ˡ")
+.replace(/m/gi, "ᵐ")
+.replace(/n/gi, "ᶰ")
+.replace(/o/gi, "ᵒ")
+.replace(/p/gi, "ᵖ")
+.replace(/q/gi, "ˁ")
+.replace(/r/gi, "ʳ")
+.replace(/s/gi, "ˢ")
+.replace(/t/gi, "ᵗ")
+.replace(/u/gi, "ᵘ")
+.replace(/v/gi, "ᵛ")
+.replace(/x/gi, "ˣ")
+.replace(/w/gi, "ʷ")
+.replace(/y/gi, "ʸ")
+.replace(/z/gi, "ᶻ")
+.replace(/ /gi, "ㅤ")
+.replace(/1/gi, "¹")
+.replace(/2/gi, "²")
+.replace(/3/gi, "³")
+;
+nick_style_23.value = base.value
+.replace(/a/gi, "ａ")
+.replace(/b/gi, "ｂ")
+.replace(/c/gi, "ｃ")
+.replace(/d/gi, "ｄ")
+.replace(/e/gi, "ｅ")
+.replace(/f/gi, "ｆ")
+.replace(/g/gi, "ｇ")
+.replace(/h/gi, "ｈ")
+.replace(/i/gi, "ｉ")
+.replace(/j/gi, "ｊ")
+.replace(/k/gi, "ｋ")
+.replace(/l/gi, "ｌ")
+.replace(/m/gi, "ｍ")
+.replace(/n/gi, "ｎ")
+.replace(/o/gi, "ｏ")
+.replace(/p/gi, "ｐ")
+.replace(/q/gi, "ｑ")
+.replace(/r/gi, "ｒ")
+.replace(/s/gi, "ｓ")
+.replace(/t/gi, "ｔ")
+.replace(/u/gi, "ｕ")
+.replace(/v/gi, "ｖ")
+.replace(/x/gi, "ｘ")
+.replace(/w/gi, "ｗ")
+.replace(/y/gi, "ｙ")
+.replace(/z/gi, "ｚ")
+.replace(/ /gi, "ㅤ")
+;
+nick_style_24.value = base.value
+.replace(/a/gi, "ᴀ")
+.replace(/b/gi, "ʙ")
+.replace(/c/gi, "ᴄ")
+.replace(/d/gi, "ᴅ")
+.replace(/e/gi, "ᴇ")
+.replace(/f/gi, "ꜰ")
+.replace(/g/gi, "ɢ")
+.replace(/h/gi, "ʜ")
+.replace(/i/gi, "ɪ")
+.replace(/j/gi, "ᴊ")
+.replace(/k/gi, "ᴋ")
+.replace(/l/gi, "ʟ")
+.replace(/m/gi, "ᴍ")
+.replace(/n/gi, "ɴ")
+.replace(/o/gi, "ᴏ")
+.replace(/p/gi, "ᴘ")
+.replace(/q/gi, "Q")
+.replace(/r/gi, "ʀ")
+.replace(/s/gi, "ꜱ")
+.replace(/t/gi, "ᴛ")
+.replace(/u/gi, "ᴜ")
+.replace(/v/gi, "ᴠ")
+.replace(/x/gi, "x")
+.replace(/w/gi, "ᴡ")
+.replace(/y/gi, "ʏ")
+.replace(/z/gi, "ᴢ")
+.replace(/ /gi, "ㅤ")
+;
+nick_style_25.value = base.value
+.replace(/a/gi, "卂")
+.replace(/b/gi, "乃")
+.replace(/c/gi, "匚")
+.replace(/d/gi, "ᗪ")
+.replace(/e/gi, "乇")
+.replace(/f/gi, "千")
+.replace(/g/gi, "Ꮆ")
+.replace(/h/gi, "卄")
+.replace(/i/gi, "丨")
+.replace(/j/gi, "ﾌ")
+.replace(/k/gi, "Ҝ")
+.replace(/l/gi, "ㄥ")
+.replace(/m/gi, "爪")
+.replace(/n/gi, "几")
+.replace(/o/gi, "ㄖ")
+.replace(/p/gi, "卩")
+.replace(/q/gi, "Ɋ")
+.replace(/r/gi, "尺")
+.replace(/s/gi, "丂")
+.replace(/t/gi, "ㄒ")
+.replace(/u/gi, "ㄩ")
+.replace(/v/gi, "ᐯ")
+.replace(/x/gi, "乂")
+.replace(/w/gi, "山")
+.replace(/y/gi, "ㄚ")
+.replace(/z/gi, "乙")
+.replace(/ /gi, "ㅤ")
+;
+nick_style_26.value = base.value
+.replace(/a/gi, "ﾑ")
+.replace(/b/gi, "乃")
+.replace(/c/gi, "ᄃ")
+.replace(/d/gi, "り")
+.replace(/e/gi, "乇")
+.replace(/f/gi, "ｷ")
+.replace(/g/gi, "ム")
+.replace(/h/gi, "ん")
+.replace(/i/gi, "ﾉ")
+.replace(/j/gi, "ﾌ")
+.replace(/k/gi, "ズ")
+.replace(/l/gi, "ﾚ")
+.replace(/m/gi, "ﾶ")
+.replace(/n/gi, "刀")
+.replace(/o/gi, "の")
+.replace(/p/gi, "ｱ")
+.replace(/q/gi, "ゐ")
+.replace(/r/gi, "尺")
+.replace(/s/gi, "丂")
+.replace(/t/gi, "ｲ")
+.replace(/u/gi, "ひ")
+.replace(/v/gi, "√")
+.replace(/x/gi, "ﾒ")
+.replace(/w/gi, "W")
+.replace(/y/gi, "ﾘ")
+.replace(/z/gi, "乙")
+.replace(/ /gi, "ㅤ")
+;
+nick_style_27.value = base.value
+.replace(/a/gi, "♋︎")
+.replace(/b/gi, "♌︎")
+.replace(/c/gi, "♍︎")
+.replace(/d/gi, "♎︎")
+.replace(/e/gi, "♏︎")
+.replace(/f/gi, "♐︎")
+.replace(/g/gi, "♑︎")
+.replace(/h/gi, "♒︎")
+.replace(/i/gi, "♓︎")
+.replace(/j/gi, "🙰")
+.replace(/k/gi, "🙵")
+.replace(/l/gi, "●︎")
+.replace(/m/gi, "❍︎")
+.replace(/n/gi, "■︎")
+.replace(/o/gi, "□︎")
+.replace(/p/gi, "◻︎")
+.replace(/q/gi, "❑︎")
+.replace(/r/gi, "❒︎")
+.replace(/s/gi, "⬧︎")
+.replace(/t/gi, "⧫︎")
+.replace(/u/gi, "◆︎")
+.replace(/v/gi, "❖︎")
+.replace(/x/gi, "⌧︎︎")
+.replace(/w/gi, "♦")
+.replace(/y/gi, "⍓︎")
+.replace(/z/gi, "⌘︎")
+.replace(/ /gi, "ㅤ")
+;
+}
